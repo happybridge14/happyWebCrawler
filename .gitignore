@@ -6,3 +6,5 @@ node_modules/
 .DB_Store
 ._*
 *.log
+/.DS_Store
+/.gitignore
