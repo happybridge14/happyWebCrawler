@@ -3,7 +3,6 @@ node_modules/
 .project
 .git
 .DB_Store
-.DB_Store
 ._*
 *.log
 /.DS_Store
