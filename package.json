@@ -1,0 +1,27 @@
+{
+  "name": "happyWebCrawler",
+  "version": "0.0.1",
+  "description": "happy web crawler",
+  "author": {
+    "name": "Henry Huang",
+    "email": "happybridge14@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "nodeJS"
+  ],
+  "repository": {
+    "type": "git"
+  },
+  "main": "./main.js",
+  "engines": {
+    "node": ">= 0.6"
+  },
+  "dependencies": {
+    "cheerio": "*",
+    "level": "*"
+  },
+  "devDependencies": {
+    "when": "~3.7.3"
+  }
+}

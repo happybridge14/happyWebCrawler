@@ -1,4 +1,4 @@
-var when = require("../../bower_components/when");
+var when = require("when");
 var content = require("../library/content");
 var db = require("../library/storage");
 
@@ -12,7 +12,7 @@ var getData = function(){
       var BEGIN_INDEX = 1;
       var items = $("body>table tr");
       var length = items.length;
-      length  = 2;
+      length = 2;
       for (var i = BEGIN_INDEX ; i < length; i++) {
         console.log(items.eq(i).find("td").eq(2).text());
         console.log(items.eq(i).find("td").eq(6).text());

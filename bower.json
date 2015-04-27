@@ -1,8 +1,19 @@
 {
-  "name": "webCrawwer",
-  "verison": "0.0.1",
-  "dependencies": {},
-  "devDependencies": {
-    "when": "~3.7.2"
+  "name": "webCrawler",
+  "version": "0.0.0",
+  "homepage": "https://github.com/happybridge14/happyWebCrawler",
+  "authors": [
+    "happybridge14 <happybridge14@163.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "poly": "~0.6.0"
   }
 }

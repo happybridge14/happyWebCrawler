@@ -2,7 +2,7 @@
   'use strict';
   define(function (require) {
 
-  var when = require("../../bower_components/when");
+  var when = require("when");
   var http = require("http");
   var cheerio = require("cheerio");
 
