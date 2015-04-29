@@ -21,10 +21,30 @@ var methodFactory = function(property) {
 dbMethods.forEach(function(value, index) {
   methodFactory(value);
 })
+
 exports.batchChain = function() {
   return db.batch();
 }
+
+exports.delSome = function(condition) {
+  var keyAry = [];
+  db.createKeyStream(condition)
+    .on("data", function(data) {
+      keyAry.push({type:'del', key:data});
+    })
+    .on("error", function(err) {
+    })
+    .on("close", function() {
+      db.batch(keyAry);
+    })
+    .on("end", function() {
+    })
+}
+
 //condition:{gt:2, values:true};
+//gt(e), ls(e), start, end, limit
+//List all: start: a, end: a~
+//method!name!function!timestamp!id....
 exports.getStream = function(type, condition) {
   var retAry = [];
   var operationFun;
