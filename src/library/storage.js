@@ -42,7 +42,7 @@ exports.delSome = function(condition) {
 }
 
 //condition:{gt:2, values:true};
-//gt(e), ls(e), start, end, limit
+//gt(e), ls(e), limit
 //List all: start: a, end: a~
 //method!name!function!timestamp!id....
 exports.getStream = function(type, condition) {
